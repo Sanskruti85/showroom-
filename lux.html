@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="lux.css">
+</head>
+
+<body>
+
+    <div class="mac" id="main">
+    
+        <!-- SEARCH -->
+        <div class="contain">
+
+            <input
+                type="text"
+                class="search"
+                id="sb"
+                placeholder="Search Box.....">
+
+            <button
+                class="btn"
+                type="button"
+                onclick="searchCars()">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- HEADING -->
+        <main>
+            <h1>Luxury Car Showroom</h1>
+        </main>
+
+
+        <!-- CARS -->
+        <div class="container">
+
+            <div class="cars">
+
+                <div class="car1">
+                    <h3>Bentley Continental GT</h3>
+                </div>
+
+                <div class="car2">
+                    <h3>Aston Martin DBS V12</h3>
+                </div>
+
+                <div class="car3">
+                    <h3>Ferrari Testarossa</h3>
+                </div>
+
+                <div class="car4">
+                    <h3>Buick Special</h3>
+                </div>
+
+            
+
+        </div>
+
+
+        <!-- CAR LIST -->
+        <div class="banner">
+
+            <ul class="nav">
+
+                <!-- BENTLEY -->
+                <li>
+                    <h3>Bentley Continental GT</h3>
+
+                    <p>
+                        1]Luxury
+                        <br>
+                        2]Automatic
+                        <br>
+                        3]Sunroof
+                    </p>
+
+                    <button
+                        type="button"
+                        class="book"
+                        data-image="pexels-car-1851299_1920.jpg">
+                        <span></span>
+                        <b>Book now</b>
+                    </button>
+                </li>
+
+
+                <!-- ASTON MARTIN -->
+                <li>
+                    <h3>Aston Martin DBS V12</h3>
+
+                    <p>
+                        1]Silver Paint
+                        <br>
+                        2]Alloy Wheels
+                        <br>
+                        3]Sports coupe
+                    </p>
+
+                    <button
+                        type="button"
+                        class="book"
+                        data-image="piro4d-aston-martin-2118857.jpg">
+                        <span></span>
+                        <b>Book now</b>
+                    </button>
+                </li>
+
+
+                <!-- FERRARI -->
+                <li>
+                    <h3>Ferrari Testarossa</h3>
+
+                    <p>
+                        1]Side strakes
+                        <br>
+                        2]Pop-up headlights
+                        <br>
+                        3]Rear-mounted engine
+                    </p>
+
+                    <button
+                        type="button"
+                        class="book"
+                        data-image="rohwedder-opel-5190050_1920.jpg">
+                        <span></span>
+                        <b>Book now</b>
+                    </button>
+                </li>
+
+
+                <!-- BENTLEY 2 -->
+                <li>
+                    <h3>Buick Special</h3>
+
+                    <p>
+                        1]Two-tone paint
+                        <br>
+                        2]Chrome grill
+                        <br>
+                        3]Ventiport holes
+                    </p>
+
+                    <button
+                        type="button"
+                        class="book"
+                        data-image="wildpixar-buick-1400243_1920.jpg">
+                        <span></span>
+                        <b>Book now</b>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+
+    </div>
+
+
+    <!-- BOOKING FORM -->
+    <div id="carShowForm" class="visit-form">
+
+        <h1>Book a Car</h1>
+
+        <!-- SELECTED CAR IMAGE -->
+        <div id="selectedCar">
+             <img id="carImage" width="500">
+             
+        </div>
+
+        <form id="fm">
+
+            <label>Name</label>
+
+            <input
+                type="text"
+                placeholder="Enter Your Name">
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                placeholder="Enter Your Email">
+
+
+            <input
+                type="tel"
+                placeholder="Enter Your Number">
+
+
+            <p>Choose Car Color:</p>
+
+            <div id="colors"></div>
+
+            <button type="submit" id="bn">
+                Submit
+            </button>
+            <span id="pn"></span>
+
+        </form>
+
+    
+    </div>
+
+
+    <script src="lux.js"></script>
+
+</body>
+
+</html>

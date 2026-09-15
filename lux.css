@@ -1,0 +1,262 @@
+*{
+    padding:0;
+    margin:0;
+}
+main{
+    background-color: black;
+    color: blue;
+    display:flex;
+    justify-content: center;
+}
+.cars, .nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner
+{
+    background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("toby_parsons-ferrari-360-2918130_1920.jpg");
+    background-position: right center;
+    background-size: cover;
+    width:75%;
+    height:155vh;
+    margin-left: auto;
+    position: relative;
+
+}
+.nav{
+    position: absolute;
+    color: aliceblue;
+}
+.car1{
+    background-image:url("pexels-car-1851299_1920.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:100%;
+    height:200px;
+}
+.car2{
+ background-image:url("piro4d-aston-martin-2118857.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:100%;
+    width:100%;
+    height:250px;
+}
+.car3{
+background-image:url("rohwedder-opel-5190050_1920.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:100%;
+    height:325px;
+    
+}
+.car4{
+    background-image:url("wildpixar-buick-1400243_1920.jpg");
+    background-position: left-center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:100%;
+    height:325px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+
+}
+.cars{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.nav {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.nav li {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.nav li:nth-child(1) {
+    height: 200px;
+}
+
+.nav li:nth-child(2) {
+    height: 250px;
+}
+
+.nav li:nth-child(3) {
+    height: 325px;
+}
+
+.nav li:nth-child(4) {
+    height: 325px;
+}
+.visit-form {
+    display: none;
+}
+
+/* Hide the whole car section */
+.form-active .container {
+    display: none;
+}
+
+
+.visit-form {
+    display: none;
+    width: 650px;
+    padding: 30px;
+    background: white;
+    border: 2px solid blue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.form-active .visit-form {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.visit-form h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.visit-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.visit-form input[type="text"],
+.visit-form input[type="email"],
+.visit-form input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.visit-form p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.visit-form #colors label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.visit-form button {
+    padding: 12px 25px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.book{
+    padding:8px;
+    color:white;
+    background:transparent;
+    width: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.book span{
+    background-color: silver;
+    height: 100%;
+    width:0;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+.book:hover span{
+    width:100%;
+}
+
+.book b{
+    position: relative;
+    z-index: 1;
+}
+.contain {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+    height: 100%;
+}
+
+.search {
+    flex: 1;
+    height:35px;
+    margin: 0 0 0 0;
+    background-color: rgb(190, 183, 183);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn {
+    width: 10%;
+    margin: 0 0 0 0;
+    padding: 2px 8px;
+    box-sizing: border-box;
+}
+/*.search{
+    width: 94%;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(205, 203, 203);
+}
+.btn{
+    padding:0px 2px;
+    width:5%;
+    margin-left: 0;
+}
+*/
+#selectedCar {
+    width: 450px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.book * {
+    pointer-events: none;
+}
+#carImage{
+    width: 450px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#carImage, .cars img, #selectedCar img{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+ 
+
