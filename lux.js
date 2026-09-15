@@ -110,7 +110,7 @@ container.addEventListener("change", function(e) {
                 carImage.src = "pexels-niko-prodan-421922755-27974938.jpg";
             }
             else if (chosenColor === "Red") {
-                carImage.src = "alex-ifti-8mBvCiVMBqg-unsplash.jpg";
+                carImage.src = "joshua-koblin-eqW1MPinEV4-unsplash.jpg";
             }
             
         }
